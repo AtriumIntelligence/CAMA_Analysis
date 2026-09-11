@@ -22,7 +22,7 @@ SELECT
     Land_Acres,
     Sale_Price,
     Sale_Date
-FROM 'data/parquet/parcels.parquet'
+FROM 'data/parquet/demo.parquet'
 WHERE Town_Name = '{selected_town}'
 LIMIT 1000
 """
@@ -31,7 +31,7 @@ df = query(sql)
 
 count = query(f"""
 SELECT COUNT(*) AS total
-FROM 'data/parquet/parcels.parquet'
+FROM 'data/parquet/demo.parquet'
 WHERE Town_Name = '{selected_town}'
 """)
 
