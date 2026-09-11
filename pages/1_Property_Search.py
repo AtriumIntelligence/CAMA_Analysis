@@ -41,7 +41,7 @@ if search:
             Sale_Price,
             Sale_Date,
             Land_Acres
-        FROM 'data/parquet/parcels.parquet'
+        FROM 'data/parquet/demo.parquet'
         WHERE Full_Address ILIKE '%{search}%'
         LIMIT 250
         """

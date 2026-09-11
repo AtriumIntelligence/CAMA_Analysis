@@ -5,7 +5,7 @@ st.title("Town Explorer")
 
 towns = query("""
 SELECT DISTINCT Town_Name
-FROM 'data/parquet/parcels.parquet'
+FROM 'data/parquet/demo.parquet'
 ORDER BY Town_Name
 """)
 

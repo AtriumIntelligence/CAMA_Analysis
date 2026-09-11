@@ -12,7 +12,7 @@ SELECT
             Assessed_Total AS DOUBLE
         )
     ) AS Portfolio_Value
-FROM 'data/parquet/parcels.parquet'
+FROM 'data/parquet/demo.parquet'
 WHERE Owner IS NOT NULL
 GROUP BY Owner
 HAVING COUNT(*) > 1

@@ -18,7 +18,7 @@ if owner:
         Sale_Price,
         Sale_Date,
         Land_Acres
-    FROM 'data/parquet/parcels.parquet'
+    FROM 'data/parquet/demo.parquet'
     WHERE Owner ILIKE '%{owner}%'
     ORDER BY TRY_CAST(Assessed_Total AS DOUBLE) DESC
     LIMIT 1000

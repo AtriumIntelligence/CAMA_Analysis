@@ -12,7 +12,7 @@ SELECT
         Land_Acres AS DOUBLE
     ) AS Acres,
     Assessed_Total
-FROM 'data/parquet/parcels.parquet'
+FROM 'data/parquet/demo.parquet'
 WHERE Land_Acres IS NOT NULL
 ORDER BY Acres DESC
 LIMIT 500
